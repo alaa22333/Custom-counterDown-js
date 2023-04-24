@@ -1,0 +1,159 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;overflow: hidden;
+
+}
+body {
+  height: 100vh;
+  font-family: cursive;
+
+}
+
+video{
+  height: 100%;
+    width: 100%;
+max-width: 100%;
+object-fit: fill;
+position: relative;
+}
+/* countdown  */
+.counterBox {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    background: #ffffff64;
+    height: 48vh;
+    width: 100%;
+    border-radius: 12px;
+    max-width:1000px;
+}
+.counterBox h1{
+    font-size: 3rem;
+    margin-bottom: 16px;
+
+}
+
+form{
+    padding: 13px;width:100%
+   
+}
+form label{
+    font-size: 2rem;
+    color: rgb(215 70 204);
+    margin-left: 16px;
+
+}
+form input ,button{
+    border: none;
+    border-radius: 20px;
+    padding-block: 0.6rem;
+    padding-inline: 2rem;
+    width:100%;
+    font-size: 1.7rem;
+    display: block;
+  
+}
+form:not(:last-of-type)  input:focus{
+        border: 1px solid #df8fdc;
+    outline: none !important;
+
+}
+form input::placeholder{
+    color: #df8fdc;
+}
+form:first-child input:focus::placeholder{
+color: transparent;
+}
+button{
+    cursor: pointer;
+    background: #df8fdc;
+
+}
+/* counter container */
+.big-counter{
+    justify-content: start;
+}
+
+
+.counter{
+    display: flex;
+    column-gap: 20px;
+    padding: 23px;
+    margin-top: -31px;
+flex: auto;
+    align-items: center;
+
+}
+.time{    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.counter h1{
+font-size: 4rem;
+}
+.counter h2{
+    font-size: 2rem;
+
+}
+button{
+    margin: 29px auto;
+    width: 200px;
+}
+
+.new-counter h1:nth-child(1){
+     color: #df8fdc;
+    
+     -webkit-animation: scale 3s infinite ;
+     
+}
+
+@keyframes scale {
+50%{
+    transform: scale(.7);
+    -webkit-transform: scale(.7);
+    -moz-transform: scale(.7);
+    -ms-transform: scale(.7);
+    -o-transform: scale(.7);
+    background: -webkit-linear-gradient(rgb(67, 47, 147),rgb(251, 7, 7), rgb(216, 191, 93));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+    100%{
+         background: -webkit-linear-gradient(rgb(125, 47, 147),rgb(147, 47, 47), rgb(216, 191, 93));
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         transform: scale(1);
+         -webkit-transform: scale(1);
+         -moz-transform: scale(1);
+         -ms-transform: scale(1);
+         -o-transform: scale(1);
+}
+    
+}
+
+
+.new-counter button{
+    margin-bottom:-40px ;
+}
+
+.hide{
+    display: none !important;
+}
+@media screen and (max-width:900px){
+    h1{
+        font-size: 1.7rem !important;
+    }
+    .counter h2{
+        font-size: 1.2rem;
+    
+    }
+}

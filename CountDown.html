@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CountDown App</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel=" stylesheet" href="styles/all.min.css">
+    <!-- render all elements -->
+    <link rel=" stylesheet" href="styles\styles.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link
+        href="https://fonts.google.com/specimen/Cairo?preview.text=New%20Quot&preview.text_type=custom"
+        rel="stylesheet"> -->
+
+
+    <!-- render all elements -->
+
+
+</head>
+
+<body >
+  <!-- overlay -->
+<video loop muted autoplay src="styles/images/pexels-koolshooters-7346134.mp4"></video>
+<div class="counterBox1 counterBox">
+    <h1>create a custom countdown</h1>
+<div class="big-container">
+
+    <!-- title -->
+<form >
+    <label for="title" value="Title">Title</label>
+    <input id="title" type="text" placeholder="What are you counting down to ?">
+ </form>
+ <!-- date -->
+ <form >
+    <label value="Date" for="date">Select a Date</label>
+    <input id="date" type="date" >
+ </form>
+
+   <button class="submitBtn" type="submit">submit</button>
+
+</div>
+</div>
+<div class="big-counter  counterBox hide">
+ <h1 class="value">Value index</h1>
+    <div class="counter">
+    
+           
+        <div  class="days time">
+            <h1>00</h1>
+            <h2>Days</h2>
+        </div>
+        <div class="hours time">
+            <h1>00</h1>
+            <h2>Hours</h2>
+        </div>
+        <div class="mins time">
+            <h1>00</h1>
+            <h2>Minutes</h2>
+        </div>
+        <div class="secs time">
+            <h1>00</h1>
+            <h2>Seconds</h2>
+        </div>
+    </div>
+    <button class="reset"> Reset</button>
+    </div>
+<div class="new-counter counterBox hide">
+    <h1 class="completed">Countdown Complete!</h1>
+    <h1>Valve Index finished on 22-12-2022</h1>
+    <button>New CountDown</button>
+
+</div>
+</body>
+
+<script src="main.js"></script>
+
+
+</html>
